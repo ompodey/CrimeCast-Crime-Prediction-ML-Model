@@ -1,13 +1,13 @@
-# 🕵️‍♂️ CrimeCast – Crime Category Prediction with Ensemble Machine Learning
+# 🕵️‍♂️ CrimeCast – Crime Category Prediction with Machine Learning
 
 This project was developed as part of a Kaggle competition to predict crime categories based on time, location, and victim details. The focus was on building an accurate, generalizable ML pipeline with extensive feature engineering and ensemble models.
 
 ## 🚀 Project Highlights
-- Achieved **95% accuracy** with advanced ensemble techniques.
-- Balanced highly imbalanced dataset using **SMOTE**.
+- Achieved **95% accuracy** with fine tuned light gbm.
 - Feature selection and dimensionality reduction using **SelectKBest**.
 - Tuned hyperparameters using **GridSearchCV**.
-- Combined predictions using **Soft Voting Ensemble** (XGBoost + LightGBM).
+- Conducted exploratory data analysis and preprocessing with care to maintain data quality and generalization.
+
 
 ## 🛠️ Tech Stack
 - **Python**
@@ -15,7 +15,6 @@ This project was developed as part of a Kaggle competition to predict crime cate
 - **scikit-learn**
 - **XGBoost**
 - **LightGBM**
-- **imblearn** (SMOTE)
 
 ## 📊 Machine Learning Pipeline
 1. Data Cleaning and EDA
@@ -25,7 +24,6 @@ This project was developed as part of a Kaggle competition to predict crime cate
 5. Model Training:
     - XGBoostClassifier
     - LightGBMClassifier
-    - VotingClassifier (soft voting)
 6. Evaluation:
     - Accuracy: 95%
     - F1-Score and Classification Report
